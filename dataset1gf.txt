@@ -1,0 +1,55 @@
+Ghost Festival - AI Dataset Information
+
+General Information
+
+Game Title: Ghost Festival
+Genre: Casual multiplayer Web3 blockchain game
+Visual Aesthetic: Urban anime-inspired graphics with a retro neo-Y2K style. Themes include ghosts (spirits) and retro items from the 2000s.
+Target Audience: Players aged 25-35 who enjoy casual gaming with blockchain integration.
+
+Gameplay and Mechanics
+Core Gameplay:
+The game features a whack-a-mole system where players interact with enemies by "hitting" or defeating them in real-time.
+Players progress through quests and level up their characters or profiles.
+Enemies: There are a variety of enemy types with different behaviors and challenges.
+Mini-Games: Between whack-a-mole sessions, players engage in mini-games for additional engagement and rewards.
+
+Currency System:
+Tickets: Earned by defeating enemies. These tickets are accumulated per event and tracked for leaderboard rankings.
+Leaderboards:
+Rankings are based on the cumulative number of tickets collected during an event.
+Prizes: Awarded to top-ranking players on the leaderboard.
+Leaderboards reset at the end of each event.
+
+Events
+Variable Lengths: Events have flexible durations, defined by the developers.
+Current Event: The ongoing event is named "Early Alpha".
+Blockchain and Web3 Integration
+
+Wallet Support:
+MetaMask
+Coinbase Wallet
+WalletConnect
+Technical Details:
+The game uses the Thirdweb library for wallet integration.
+Testing is currently conducted on the Base Sepolia testnet.
+Developers are working to resolve issues with MetaMask connection stability after app-switching.
+
+Community and Rewards
+
+Community Management:
+The developers are migrating the player community from Telegram to Discord to enhance engagement and communication.
+
+NFT Integration:
+The NFTs of Gen-1 are PFPs (profile pictures), and the ownership of each PFP grants three items in the game: a Ghost (character), a Hammer (weapon) and a background (utility will be revealed soon).
+
+Privacy and Compliance
+Data Collection:
+The game collects minimal data, limited to usernames provided by players. No additional personal information is stored.
+
+Platform: Android, iOS
+
+Current Status
+Alpha Phase: The game is in an Early Alpha phase where players can test the gameplay and provide feedback.
+Ongoing Improvements: Developers are addressing bugs, refining wallet connectivity, and optimizing player experience.
+This dataset provides foundational knowledge for AI-based systems or models to understand the game's structure, mechanics, and overall design philosophy. Let me know if further details are required for the dataset!

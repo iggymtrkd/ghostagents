@@ -27,7 +27,7 @@ st.image(title_image_url, use_container_width=True)
 
 # New header text
 st.markdown("<h2 style='text-align: center;'>Blockchain Gaming AI Companion Agents</h2>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center;'>True Ownership. For EVM and Bitcoin</h3>", unsafe_allow_html=True)
+#st.markdown("<h3 style='text-align: center;'>True Ownership. For EVM and Bitcoin</h3>", unsafe_allow_html=True)
 
 # Personality Images and Descriptions
 personalities = {
@@ -89,11 +89,15 @@ for i, col in enumerate(cols):
         col.write(f"No preview for Image {i+1}")
 
 # Add fields for two local dataset paths with weights
-dataset_path1 = st.text_input("Enter path to game dataset:", r"dataset1gf.txt")
-weight1 = st.number_input("Weight for game dataset:", min_value=0.0, max_value=1.0, value=0.75, step=0.1)
+#dataset_path1 = st.text_input("Enter path to game dataset:", r"dataset1gf.txt")
+#weight1 = st.number_input("Weight for game dataset:", min_value=0.0, max_value=1.0, value=0.75, step=0.1)
+#dataset_path2 = st.text_input("Enter path to personality dataset:", r"dataset2gf.txt")
+#weight2 = st.number_input("Weight for personality dataset:", min_value=0.0, max_value=1.0, value=0.25, step=0.1)
+dataset_path1 = r"dataset1gf.txt"
+weight1 = 0.75
 
-dataset_path2 = st.text_input("Enter path to personality dataset:", r"dataset2gf.txt")
-weight2 = st.number_input("Weight for personality dataset:", min_value=0.0, max_value=1.0, value=0.25, step=0.1)
+dataset_path2 = r"dataset2gf.txt"
+weight2 = 0.25
 
 # Load text from files for context
 context1 = ""
@@ -102,7 +106,6 @@ if dataset_path1:
     try:
         with open(dataset_path1, 'r', encoding='utf-8') as file:
             context1 = file.read().strip()
-        st.success("Game dataset loaded successfully.")
     except Exception as e:
         st.error(f"Error loading game dataset: {str(e)}")
 
@@ -110,17 +113,16 @@ if dataset_path2:
     try:
         with open(dataset_path2, 'r', encoding='utf-8') as file:
             context2 = file.read().strip()
-        st.success("Second dataset loaded successfully.")
     except Exception as e:
         st.error(f"Error loading second dataset: {str(e)}")
 
 # Combine contexts with weights
 total_weight = weight1 + weight2
 if total_weight > 0:
-    # Here we multiply the context by the integer part of the weight to simulate weighting without direct float multiplication
     combined_context = f"{context1 * int(weight1 * 10)}\n{context2 * int(weight2 * 10)}"
 else:
     combined_context = ""
+
 
 # Encode images
 base64_images = [encode_image_from_url(url) for url in IMAGE_URLS if url]

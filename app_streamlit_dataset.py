@@ -89,13 +89,6 @@ for i, col in enumerate(cols):
         col.write(f"No preview for Image {i+1}")
 
 # Add fields for two local dataset paths with weights
-dataset_path1 = st.text_input("Enter path to game dataset:", r"dataset1gf.txt")
-weight1 = st.number_input("Weight for game dataset:", min_value=0.0, max_value=1.0, value=0.75, step=0.1)
-
-dataset_path2 = st.text_input("Enter path to personality dataset:", r"dataset2gf.txt")
-weight2 = st.number_input("Weight for personality dataset:", min_value=0.0, max_value=1.0, value=0.25, step=0.1)
-
-# Load text from files for context
 context1 = ""
 context2 = ""
 if dataset_path1:

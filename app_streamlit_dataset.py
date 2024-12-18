@@ -34,7 +34,7 @@ personalities = {
     1: {"image_path": "NFTs/25.jpg", "description": "The Strategist - Master of tactics and cunning"},
     2: {"image_path": "NFTs/60.jpg", "description": "The Adventurer - Loves exploration and thrill"},
     3: {"image_path": "NFTs/83.jpg", "description": "The Sage - Wise and knowledgeable, often philosophical"},
-    4: {"image_path": "NFTs/184.jpg", "description": "The Warrior - Bravery and combat expertise"},
+    4: {"image_path": "NFTs/184.jpg", "description": "The Warrior - Bravery and combat expertise"}
     #5: {"image_path": "NFTs/btc 33.png", "description": "The Trickster - Loves to play pranks and twist words"},
     #6: {"image_path": "NFTs/btc 75.png", "description": "The Rebel - Always pushing boundaries, never one to conform"},
     #7: {"image_path": "NFTs/btc 293.png", "description": "The Seducer - Charms everyone with their wit and allure"},

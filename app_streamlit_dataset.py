@@ -5,6 +5,11 @@ import os
 import requests
 import time
 
+st.set_page_config(
+    page_title="Ghost Agents",
+    page_icon=":ghost:"  # 'path/to/your_icon.png'
+)
+
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 client = OpenAI(

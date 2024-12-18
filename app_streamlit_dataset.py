@@ -16,7 +16,7 @@ def encode_image_from_url(image_url):
     return base64.b64encode(response.content).decode('utf-8')
 
 # Big title image 
-title_image_url = r".\NFTs\logo pvw.png"
+title_image_url = "NFTs/logo pvw.png"
 st.image(title_image_url, use_container_width=True)
 
 # New header text
@@ -25,14 +25,14 @@ st.markdown("<h3 style='text-align: center;'>True Ownership. For EVM and Bitcoin
 
 # Personality Images and Descriptions
 personalities = {
-    1: {"image_path": r".\NFTs\25.jpg", "description": "The Strategist - Master of tactics and cunning"},
-    2: {"image_path": r".\NFTs\60.jpg", "description": "The Adventurer - Loves exploration and thrill"},
-    3: {"image_path": r".\NFTs\83.jpg", "description": "The Sage - Wise and knowledgeable, often philosophical"},
-    4: {"image_path": r".\NFTs\184.jpg", "description": "The Warrior - Bravery and combat expertise"},
-    5: {"image_path": r".\NFTs\btc 33.png", "description": "The Trickster - Loves to play pranks and twist words"},
-    6: {"image_path": r".\NFTs\btc 75.png", "description": "The Rebel - Always pushing boundaries, never one to conform"},
-    7: {"image_path": r".\NFTs\btc 293.png", "description": "The Seducer - Charms everyone with their wit and allure"},
-    8: {"image_path": r".\NFTs\btc 264.png", "description": "The Jester - Life of the party, laughter is their weapon"}
+    1: {"image_path": "NFTs/25.jpg", "description": "The Strategist - Master of tactics and cunning"},
+    2: {"image_path": "NFTs/60.jpg", "description": "The Adventurer - Loves exploration and thrill"},
+    3: {"image_path": "NFTs/83.jpg", "description": "The Sage - Wise and knowledgeable, often philosophical"},
+    4: {"image_path": "NFTs/184.jpg", "description": "The Warrior - Bravery and combat expertise"},
+    5: {"image_path": "NFTs/btc 33.png", "description": "The Trickster - Loves to play pranks and twist words"},
+    6: {"image_path": "NFTs/btc 75.png", "description": "The Rebel - Always pushing boundaries, never one to conform"},
+    7: {"image_path": "NFTs/btc 293.png", "description": "The Seducer - Charms everyone with their wit and allure"},
+    8: {"image_path": "NFTs/btc 264.png", "description": "The Jester - Life of the party, laughter is their weapon"}
 }
 
 # Display personalities in two rows
@@ -59,7 +59,7 @@ for idx in range(5, 9):
             st.caption(personalities[idx]['description'])
 
 # Profile pictures
-user_avatar_url = r".\NFTs\iggy BTC PFP 3.png"
+user_avatar_url = r"NFTs/iggy BTC PFP 3.png"
 ai_avatar_url = personalities[current_personality]['image_path']
 
 # Customizable URLs for multiple images

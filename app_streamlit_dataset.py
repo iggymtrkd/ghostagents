@@ -70,7 +70,7 @@ ai_avatar_url = personalities[current_personality]['image_path']
 
 # Customizable URLs for multiple images
 with st.expander("Image Inputs", expanded=False):  # Set expanded=True to open by default
-    st.subheader("Image Inputs")
+    st.subheader("Add extra context with game images")
     cols = st.columns(3)
     IMAGE_URLS = []
 

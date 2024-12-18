@@ -5,9 +5,9 @@ import os
 import requests
 import time
 
-XAI_API_KEY = os.getenv("XAI_API_KEY")
+XAI_API_KEY = os.getenv("OPENAI_API_KEY")
 client = OpenAI(
-    api_key="xai-fKaj18ViSWUs3LASpFkv15or1dVRG5atODuiO0ktpdL8rOgnC6xCXHDAluZEXv5r1yv31JAlNsQL4Dhc",
+    api_key="OPENAI_API_KEY",
     base_url="https://api.x.ai/v1",
 )
 

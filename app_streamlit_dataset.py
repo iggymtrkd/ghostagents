@@ -69,24 +69,28 @@ user_avatar_url = r"NFTs/iggy BTC PFP 3.png"
 ai_avatar_url = personalities[current_personality]['image_path']
 
 # Customizable URLs for multiple images
-st.subheader("Image Inputs")
-cols = st.columns(3)
-IMAGE_URLS = []
+with st.expander("Image Inputs", expanded=False):  # Set expanded=True to open by default
+    st.subheader("Image Inputs")
+    cols = st.columns(3)
+    IMAGE_URLS = []
 
-for i, col in enumerate(cols):
-    url = col.text_input(f"Enter Image URL {i+1}:", 
-                         "https://i.ibb.co/hLxNnHG/screenshot1.png" if i == 0 else 
-                         "https://i.ibb.co/zQZ9P4F/screenshot2.png" if i == 1 else 
-                         "https://i.ibb.co/PY6LqQ5/screenshot3.png")
-    IMAGE_URLS.append(url)
+    for i, col in enumerate(cols):
+        url = col.text_input(
+            f"Enter Image URL {i+1}:",
+            "https://i.ibb.co/hLxNnHG/screenshot1.png" if i == 0 else
+            "https://i.ibb.co/zQZ9P4F/screenshot2.png" if i == 1 else
+            "https://i.ibb.co/PY6LqQ5/screenshot3.png"
+        )
+        IMAGE_URLS.append(url)
 
-    if url:
-        try:
-            col.image(url, caption=f"Preview {i+1}", use_container_width=True)
-        except Exception as e:
-            col.write(f"Error loading image {i+1}: {str(e)}")
-    else:
-        col.write(f"No preview for Image {i+1}")
+        if url:
+            try:
+                col.image(url, caption=f"Preview {i+1}", use_container_width=True)
+            except Exception as e:
+                col.write(f"Error loading image {i+1}: {str(e)}")
+        else:
+            col.write(f"No preview for Image {i+1}")
+
 
 # Add fields for two local dataset paths with weights
 dataset_path1 = "dataset1gf.txt"  # Fixed path for the first dataset

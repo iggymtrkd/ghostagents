@@ -89,6 +89,11 @@ for i, col in enumerate(cols):
         col.write(f"No preview for Image {i+1}")
 
 # Add fields for two local dataset paths with weights
+dataset_path1 = "dataset1gf.txt"  # Fixed path for the first dataset
+dataset_path2 = "dataset2gf.txt"  # Fixed path for the second dataset
+weight1 = 0.75  # Fixed weight for the first dataset
+weight2 = 0.25  # Fixed weight for the second dataset
+
 context1 = ""
 context2 = ""
 if dataset_path1:

@@ -26,7 +26,8 @@ title_image_url = "NFTs/logo pvw.png"
 st.image(title_image_url, use_container_width=True)
 
 # New header text
-st.markdown("<h2 style='text-align: center;'>Blockchain Gaming AI Companion Agents</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>Ghost Agents</h2>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>Blockchain Gaming AI Companion Agents</h3>", unsafe_allow_html=True)
 #st.markdown("<h3 style='text-align: center;'>True Ownership. For EVM and Bitcoin</h3>", unsafe_allow_html=True)
 
 # Personality Images and Descriptions
@@ -69,8 +70,8 @@ user_avatar_url = r"NFTs/iggy BTC PFP 3.png"
 ai_avatar_url = personalities[current_personality]['image_path']
 
 # Customizable URLs for multiple images
-with st.expander("Image Inputs", expanded=False):  # Set expanded=True to open by default
-    st.subheader("Add extra context with game images")
+with st.expander("Add extra context with pictures", expanded=False):  # Set expanded=True to open by default
+    st.subheader("Image links")
     cols = st.columns(3)
     IMAGE_URLS = []
 

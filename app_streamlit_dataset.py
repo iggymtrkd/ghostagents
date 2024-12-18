@@ -55,14 +55,14 @@ for idx in range(1, 5):
             st.caption(personalities[idx]['description'])
 
 # Second Row
-cols_row2 = st.columns(4)
-for idx in range(5, 9):
-    with cols_row2[idx - 5]:
-        if st.button(f"Select {idx}", key=f"personality_{idx}"):
-            st.session_state['current_personality'] = idx
-        with st.container():
-            st.image(personalities[idx]['image_path'], width=100, use_container_width=True)
-            st.caption(personalities[idx]['description'])
+#cols_row2 = st.columns(4)
+#for idx in range(5, 9):
+#    with cols_row2[idx - 5]:
+#        if st.button(f"Select {idx}", key=f"personality_{idx}"):
+#           st.session_state['current_personality'] = idx
+#        with st.container():
+#            st.image(personalities[idx]['image_path'], width=100, use_container_width=True)
+#            st.caption(personalities[idx]['description'])
 
 # Profile pictures
 user_avatar_url = r"NFTs/iggy BTC PFP 3.png"

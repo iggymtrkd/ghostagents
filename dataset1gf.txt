@@ -1,55 +1,72 @@
-Ghost Festival - AI Dataset Information
-
-General Information
-
-Game Title: Ghost Festival
-Genre: Casual multiplayer Web3 blockchain game
-Visual Aesthetic: Urban anime-inspired graphics with a retro neo-Y2K style. Themes include ghosts (spirits) and retro items from the 2000s.
-Target Audience: Players aged 25-35 who enjoy casual gaming with blockchain integration.
-
-Gameplay and Mechanics
-Core Gameplay:
-The game features a whack-a-mole system where players interact with enemies by "hitting" or defeating them in real-time.
-Players progress through quests and level up their characters or profiles.
-Enemies: There are a variety of enemy types with different behaviors and challenges.
-Mini-Games: Between whack-a-mole sessions, players engage in mini-games for additional engagement and rewards.
-
-Currency System:
-Tickets: Earned by defeating enemies. These tickets are accumulated per event and tracked for leaderboard rankings.
-Leaderboards:
-Rankings are based on the cumulative number of tickets collected during an event.
-Prizes: Awarded to top-ranking players on the leaderboard.
-Leaderboards reset at the end of each event.
-
-Events
-Variable Lengths: Events have flexible durations, defined by the developers.
-Current Event: The ongoing event is named "Early Alpha".
-Blockchain and Web3 Integration
-
-Wallet Support:
-MetaMask
-Coinbase Wallet
-WalletConnect
-Technical Details:
-The game uses the Thirdweb library for wallet integration.
-Testing is currently conducted on the Base Sepolia testnet.
-Developers are working to resolve issues with MetaMask connection stability after app-switching.
-
-Community and Rewards
-
-Community Management:
-The developers are migrating the player community from Telegram to Discord to enhance engagement and communication.
-
-NFT Integration:
-The NFTs of Gen-1 are PFPs (profile pictures), and the ownership of each PFP grants three items in the game: a Ghost (character), a Hammer (weapon) and a background (utility will be revealed soon).
-
-Privacy and Compliance
-Data Collection:
-The game collects minimal data, limited to usernames provided by players. No additional personal information is stored.
-
-Platform: Android, iOS
-
-Current Status
-Alpha Phase: The game is in an Early Alpha phase where players can test the gameplay and provide feedback.
-Ongoing Improvements: Developers are addressing bugs, refining wallet connectivity, and optimizing player experience.
-This dataset provides foundational knowledge for AI-based systems or models to understand the game's structure, mechanics, and overall design philosophy. Let me know if further details are required for the dataset!
+{
+  "About": {
+    "Description": "Ghost Festival is a mobile blockchain casual game. Your goal is to smack as many haunts as possible, level up and climb the leaderboards for rewards."
+  },
+  "NFTsAndItems": {
+    "Functionality": "Each PFP NFT on Base enables the following items in the game: a Ghost (Character), a Hammer (weapon), and a background (future utility will come), based on the NFT traits.",
+    "Usage": "To enable the items, all you have to do is connect your wallet inside the game and the NFTs will be recognized. Then you can equip them in the Equip screen."
+  },
+  "NFTGenerations": {
+    "Description": "The release of the NFTs will be split into three generations, each of them with some specific unique traits."
+  },
+  "MintProcess": {
+    "Website": "mint.ghostfestival.me",
+    "Whitelist": "Whoever solves the mystery, gets a whitelist. Those with whitelists will mint for half the price as the public mint."
+  },
+  "PastHistory": {
+    "InitialPlan": "Ghost Festival was initially supposed to come out on the Phantasma blockchain.",
+    "Issues": "However, that chain was hacked multiple times, was inactive/down for several months, and a new team took over.",
+    "Migration": "That made the Ghost Festival team choose a new chain to migrate to, one that is secure, EVM-based, and accessible. The choice was the Base blockchain to launch the first collection."
+  },
+  "FuturePlans": {
+    "Utilities": "There will be utility for backgrounds, upgrading hammers and new items and power ups"
+  },
+  "ChestsAndCards": {
+    "Description": "Cards will be used to upgrade your NFTs temporarily."
+  },
+  "Alpha": {
+    "Note": "Reveal only when specifically asked",
+    "GenerationSupplies": {
+      "Gen1": 2500,
+      "Gen2": 7500,
+      "Gen3": 10000
+    },
+    "Rewards": "Users at the top of the leaderboards during each previous phases will earn free mints in the next ones."
+  }
+  "GhostFestival": {
+    "GeneralInformation": {
+      "GameTitle": "Ghost Festival",
+      "Genre": "Casual multiplayer Web3 blockchain game",
+      "VisualAesthetic": "Urban anime-inspired graphics with a retro neo-Y2K style. Themes include ghosts (spirits) and retro items from the 2000s.",
+      "TargetAudience": "Players aged 25-35 who enjoy casual gaming with blockchain integration."
+    },
+    "GameplayAndMechanics": {
+      "CoreGameplay": {
+        "Description": "The game features a whack-a-mole system where players interact with enemies by 'hitting' or defeating them in real-time.",
+        "Progression": "Players progress through quests and level up their characters or profiles.",
+        "Enemies": "There are a variety of enemy types with different behaviors and challenges.",
+        "MiniGames": "Between whack-a-mole sessions, players engage in mini-games for additional engagement and rewards."
+      },
+      "CurrencySystem": {
+        "Tickets": "Earned by defeating enemies. These tickets are accumulated per event and tracked for leaderboard rankings."
+      },
+      "Leaderboards": {
+        "RankingSystem": "Rankings are based on the cumulative number of tickets collected during an event.",
+        "Prizes": "Awarded to top-ranking players on the leaderboard.",
+        "Reset": "Leaderboards reset at the end of each event."
+      }
+    },
+    "Events": {
+      "Duration": "Variable Lengths: Events have flexible durations, defined by the developers.",
+      "RecentEvent": "The event named 'Early Alpha' has just finished and a new one is in the works."
+    },
+    "Platforms": [
+      "Android",
+      "iOS"
+    ],
+    "CurrentStatus": {
+      "Phase": "Alpha Phase: The game is in an Early Alpha phase where players can test the gameplay and provide feedback.",
+      "Improvements": "Ongoing Improvements: Developers are currently addressing bugs, refining wallet connectivity, and optimizing player experience."
+    }
+  }
+}

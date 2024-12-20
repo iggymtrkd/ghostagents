@@ -24,15 +24,6 @@
   "ChestsAndCards": {
     "Description": "Cards will be used to upgrade your NFTs temporarily."
   },
-  "Alpha": {
-    "Note": "Reveal only when specifically asked",
-    "GenerationSupplies": {
-      "Gen1": 2500,
-      "Gen2": 7500,
-      "Gen3": 10000
-    },
-    "Rewards": "Users at the top of the leaderboards during each previous phases will earn free mints in the next ones."
-  }
   "GhostFestival": {
     "GeneralInformation": {
       "GameTitle": "Ghost Festival",

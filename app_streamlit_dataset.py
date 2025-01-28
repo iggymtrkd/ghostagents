@@ -183,3 +183,11 @@ if 'analyze' in st.session_state and st.session_state['analyze']:
                 st.image(ai_avatar_url, width=50, use_container_width=True)
     except Exception as e:
         st.error(f"An error occurred: {str(e)}")
+        
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 

@@ -78,9 +78,9 @@ with st.expander("Add extra context with pictures", expanded=False):  # Set expa
     for i, col in enumerate(cols):
         url = col.text_input(
             f"Enter Image URL {i+1}:",
-            "https://i.ibb.co/hLxNnHG/screenshot1.png" if i == 0 else
-            "https://i.ibb.co/zQZ9P4F/screenshot2.png" if i == 1 else
-            "https://i.ibb.co/PY6LqQ5/screenshot3.png"
+            "https://i.imgur.com/3AgdEXo.png" if i == 0 else
+            "https://i.imgur.com/aPZoxnI.png" if i == 1 else
+            "https://i.imgur.com/EyBfbcb.png"
         )
         IMAGE_URLS.append(url)
 
